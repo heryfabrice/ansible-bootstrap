@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #########################################################
-# This script is inspired from Devops automation Cookbook
+# An inspiration from Devops automation Cookbook
 # Add it to your OS or user PATH environment variable
 #########################################################
 
@@ -38,6 +38,7 @@ mkdir -p "$WORKPATH/group_vars"
 mkdir -p "$WORKPATH/host_vars"
 mkdir -p "$WORKPATH/inventories"
 mkdir -p "$WORKPATH/roles"
+
 # Use Ansible galaxy init to create a default 'common' role
 ansible-galaxy init common --init-path "$WORKPATH/roles/"
 touch "$WORKPATH/$TITLE.yml"
